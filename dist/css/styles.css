@@ -1,0 +1,17 @@
+
+.header-search.company-profile-height {
+    background: #eee;
+    height: 380px !important;
+}
+
+#company_tefenua_canvas {
+    height: 100%;
+}
+
+.company-heading-view .company-slider-content .company-map-tefenua {
+    position: absolute;
+    top: 0;
+    left: 33.33%;
+    height: 100%;
+    width: 33.33%;
+}
