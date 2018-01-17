@@ -1,3 +1,6 @@
+// Ce fichier permet d'initialiser la carte Google
+// via le SDK de Google.
+
 // Initialise la carte Google quand le DOM est prêt
 document.addEventListener("DOMContentLoaded", function () {
     // Prépare la carte Google

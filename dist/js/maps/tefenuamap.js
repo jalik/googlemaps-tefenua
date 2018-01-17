@@ -1,3 +1,6 @@
+// Ce fichier permet d'initialiser la carte TeFenua
+// via OpenLayers.
+
 // Initialise la carte TeFenua quand le DOM est prêt
 document.addEventListener("DOMContentLoaded", function () {
     // Prépare la couche des marqueurs
