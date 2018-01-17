@@ -24,13 +24,10 @@
                                 style="text-shadow: 1px 0 0 #aaa, -1px 0 0 #aaa, 0 1px 0 #aaa, 0 -1px 0 #aaa, 1px 1px #aaa, -1px -1px 0 #aaa, 1px -1px 0 #aaa, -1px 1px 0 #aaa;">
                                 JOJO PIZZA</h1>
                         </div>
-                        <button class="general-view-btn active">
+                        <button class="general-view-btn active" data-map="google">
                             <i class="fa fa-map-marker"></i><span>Carte</span>
                         </button>
-                        <button class="map-view-btn">
-                            <i class="fa fa-male"></i><span>Visiter</span>
-                        </button>
-                        <button class="map-view-btn">
+                        <button class="map-view-btn" data-map="tefenua">
                             <i class="fa fa-map"></i><span>Te&nbsp;Fenua</span>
                         </button>
                     </div>
@@ -39,9 +36,6 @@
                     <div class="company-map-view" style="left: 0 !important;">
                         <!-- GOOGLE MAPS -->
                         <div id="company_map_canvas"></div>
-                    </div>
-                    <div class="company-map-street" style="left: 33.33% !important;">
-                        <!-- STREET VIEW -->
                     </div>
                     <div class="company-map-tefenua" style="left: 66.66% !important;">
                         <!-- TEFENUA -->
@@ -53,16 +47,16 @@
     </header>
 </div>
 
-<!-- Charge OpenLayers et le script pour afficher la carte TeFenua -->
-<script src="js/ol.js"></script>
-<script src="js/tefenua.js"></script>
-
-<!-- Charge GoogleMaps Javascript API et le script pour afficher la carte Google -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNBWVLIdFsSF27OFGM1tmpDzc5qrz7U6Y"></script>
-<script src="js/googlemaps.js"></script>
-
+<!-- Charge les dépendances -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNBWVLIdFsSF27OFGM1tmpDzc5qrz7U6Y"></script>
+<script src="js/ol.js"></script>
+
+<!-- Charge les scripts -->
+<script src="js/lib.js"></script>
+<script src="js/maps/googlemap.js"></script>
+<script src="js/maps/tefenuamap.js"></script>
+<script src="js/dualmaps_index.js"></script>
 
 </body>
 </html>
